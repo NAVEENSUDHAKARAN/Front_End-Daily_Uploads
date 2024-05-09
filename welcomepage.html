@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <center><h1> <font color="green">Application Form</font></h1></center>
+
+    <form action="thankyoupage.html">
+        <label for="fname">FirstName : </label>
+        <input type="text" id="fname" placeholder="Enter Your First Name" required/>
+        <br/>
+        <br/>
+
+        <label for="lname">LastName : </label>
+        <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" required>
+        <br/>
+        <br/>
+
+        <label for="password">Set Password : </label>
+        <input type="password" placeholder="Enter Password" id="password">
+        <br/>
+        <br/>
+        
+        <label for="age">Age : </label>
+        <input type="number" id="age" placeholder="Enter Age" min="0" required>
+        <br/>
+        <br/>
+
+        <label for="dob">DOB : </label>
+        <input type="date" id="dob" required>
+        <br/>
+        <br/>
+
+        <label for="gender">Gender : </label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br/>
+        <br/>
+
+         <label for="skill">Skill : </label>
+         <br/>
+         <label for="c">C Programming</label>
+         <input type="range" id="c">
+         <label for="java">Java Programming</label>
+         <input type="range" id="java">
+         <br/>
+        <br/>
+
+         <label for="courses">Enter Course : </label>
+        <select id="courses">
+             <option value="ECE">Electronics and Communication Engineering</option>
+             <option value="CSE">Computer Science Engineering</option>
+             <option value="EEE">Electricals and Electronics Engineering</option>
+             <option value="IT">Information Technology</option>
+        </select>
+        <br/>
+        <br/>
+
+        <label for="resume">Upload Resume : </label>
+        <input type="file" id="resume"  required>
+        <br/>
+        <br/>
+
+        <label for="submit"></label>
+        <input type="button" id="submit" value="SUBMIT" onclick="location.href='thankyoupage.html'">
+
+        <label for="reset"></label>
+        <input type="reset" id="reset" value="Reset">
+
+    </form>
+   
+</body>
+</html>
