@@ -8,23 +8,31 @@
 </head>
 <style >
 
+    body{
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+    }
+
     #div{
         position: absolute;
       }
 
     #loginBG{
-        width: 98vw;
-        height: 98vh;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
     }
 
     #mainDiv{
         position: absolute;
-        background-color: rgb(46, 46, 106);
+        background-color: rgb(8, 73, 120);
         width: 50%;
         height: 70vh;
         right: 25%;
         bottom: 20%;
-        border-radius: 10%;
+        border-radius: 5%;
         box-shadow: 5px 5px 0px 0px #756c6c;
     }
 
@@ -60,6 +68,24 @@
         
     }
 
+    #btn:hover{
+        cursor: pointer;
+        background-color: cornflowerblue;
+    }
+
+    #createAccount{
+        position: absolute;
+        display: flex;
+        font-weight: 400;
+        color: black;
+        left: 35%;
+        bottom: 25%;
+    }
+
+    #createAccount:hover{
+        color: aliceblue;
+    }
+
 </style>
 <body>
     
@@ -67,15 +93,23 @@
    <div id="div">
     <img id="loginBG" src="C:/Users/nave3557/vscode/Practice/Images/loginPageBG.jpg" alt="Background Image is Not Working" width="98vw">
     <div id="mainDiv">
-        <h1 id="logIN">LogIN</h1>
+        <form action="">
+            <h1 id="logIN">LogIN</h1>
+        <br/>
+        <br/>
         <div id="loginSetUp"><center><input id="userName" type="text" placeholder="Enter Your Name" required/>
             <br/>
             <br/>
             <input id="passWord" type="password" name="Password"  placeholder="Enter Password" required/>
             <br/>
             <br/>
-            <button id="btn" onclick="window.location.href = 'C:/Users/nave3557/vscode/Practice/welcomepage.html' ">Submit</button></center>
-           
+            <button id="btn" onclick="window.location.href='C:/Users/nave3557/vscode/Practice/functionalities.html'">Submit</button></center>
+            
+          
+        </form> 
+        </div>
+        <div>
+            <a id="createAccount" href="C:/Users/nave3557/vscode/Practice/RegistrationForm.html">Click here to Create Account</a>
         </div>
     </div>
 

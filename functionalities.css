@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#navbarDiv{
+    position: relative;
+    background-color: rgb(32, 75, 77);
+    width: 100vw;
+    height: 10vh;
+}
+#home{
+    position: absolute;
+    color: aliceblue;
+    left: 10%;
+    top: 20px;
+    text-decoration: none;
+    
+}
+#home:hover{
+    color: cadetblue;
+}
+
+#functionalities{
+    position: relative;
+    background-color: rgb(26, 94, 94);
+    display: flex;
+    width: 98.5;
+    height: 85vh;
+    gap: 10%;
+}
+
+#viewStock{
+    background-color: rgb(4, 91, 62);
+    position: relative;
+    width: 20%;
+    height: 40%;
+    top: 10%;
+    left: 5%;
+    transform: translateX(0%);
+
+}
+
+#viewStock:hover{
+    box-shadow: 5px 5px 0px 0px grey;
+    transform-origin: 0%;
+    transform: translateX(-5%);
+    transition-duration: 1s;
+ 
+}
+
+#view{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#addStock{
+    background-color: rgb(4, 91, 62);
+    position: relative;
+    width: 20%;
+    height: 40%;
+    top: 10%;
+    left: 5%;
+    transform: translateX(0%);
+}
+
+#addStock:hover{
+    box-shadow: 5px 5px 0px 0px grey;
+    transform-origin: 0%;
+    transform: translateX(-5%);
+    transition-duration: 1s;
+ 
+}
+
+#add{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+

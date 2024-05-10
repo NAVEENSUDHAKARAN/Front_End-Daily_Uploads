@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+
+    body{
+        margin: 0;
+       padding: 0; 
+       overflow: hidden;
+    }
+
+#mainDiv{
+        position: absolute;
+        height: fit-content;
+    }
+
+    #navbarDiv{
+        position: relative;
+        background-color: rgb(32, 75, 77);
+        width: 100vw;
+        height: 10vh;
+    }
+
+    #home{
+        position: absolute;
+        color: aliceblue;
+        left: 10%;
+        top: 20px;
+        text-decoration: none;
+        
+    }
+    #home:hover{
+        color: cadetblue;
+    }
+
+
+    #form{
+        position: relative;
+        background-color: cadetblue;
+        left: 25%;
+        width: 45vw;
+        height: 90vh;
+        top: 15px;
+        
+    }
+
+    #content{
+        position: relative;
+        left: 10%;
+    }
+
+    #fname{
+        position: absolute;
+        width: 25vw;
+        height: 5vh;
+        left: 20%;
+    }
+
+    #password{
+        position: relative;
+        width: 25vw;
+        height: 5vh;
+        left: 17px;
+    }
+
+    #dob{
+        position: relative;
+        width: 25vw;
+        height: 5vh;
+        left: 69px;
+    }
+    #dob:hover{
+        cursor: pointer;
+    }
+
+    #address{
+        position: relative;
+        left: 45px;
+    }
+
+    #submit{
+        position: relative;
+        width: 15%;
+        left: 25%;
+        border-radius: 5px;
+    }
+    #submit:hover{
+        cursor: pointer;
+        background-color: rgb(21, 105, 63);
+        box-shadow: 3px 3px 0px 0px #756c6c;
+    }
+
+    #reset{
+        position: relative;
+        width: 15%;
+        left: 30%;
+        border-radius: 5px;
+    }
+    #reset:hover{
+        cursor: pointer;
+       background-color: red;
+       box-shadow: 3px 3px 0px 0px #756c6c;
+    }
+
+</style>
+<body>
+
+    <div id="mainDiv">
+        <div id="navbarDiv">
+            <nav>
+                <a id="home" href="C:/Users/nave3557/vscode/Practice/loginPage.html">Home</a>
+            </nav>
+        </div>
+        <div id="form">
+            <br/>
+            <center><h1> <font color="black">Registration Form</font></h1></center>
+            <br/>
+            <br/>
+
+    <form id="content">
+        <label  for="fname">FirstName : </label>
+        <input type="text" id="fname" placeholder="Enter Your First Name" required/>
+        <br/>
+        <br/>
+        <br/>
+
+        <label for="password">Set Password : </label>
+        <input type="password" placeholder="Enter Password" id="password">
+        <br/>
+        <br/>
+
+        <label for="dob">DOB : </label>
+        <input type="date" id="dob" required>
+        <br/>
+        <br/>
+
+        <label for="address">Address : </label>
+        <textarea id="address"></textarea>
+        <br/>
+        <br/>
+
+        <label for="gender">Gender : </label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br/>
+        <br/>
+
+         <!-- <label for="courses">Enter Course : </label>
+        <select id="courses">
+             <option value="ECE">Electronics and Communication Engineering</option>
+             <option value="CSE">Computer Science Engineering</option>
+             <option value="EEE">Electricals and Electronics Engineering</option>
+             <option value="IT">Information Technology</option>
+        </select> -->
+        <br/>
+        <br/>
+
+        <label for="submit"></label>
+        <input type="button" id="submit" value="SUBMIT" onclick="location.href='thankyoupage.html'">
+
+        <label for="reset"></label>
+        <input type="reset" id="reset" value="Reset">
+
+    </form>
+   
+        </div>
+    </div>
+
+    
+</body>
+</html>
