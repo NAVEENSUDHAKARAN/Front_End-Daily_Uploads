@@ -14,32 +14,37 @@
         /* overflow: hidden; */
     }
 
-    #div{
+    /* #div{
         position: absolute;
-      }
+      } */
 
     #loginBG{
+        position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        bottom: 0%;
+        
         
     }
 
     #mainDiv{
-        position: absolute;
-        background-color: rgb(8, 73, 120);
+        position: relative;
+        background-color: transparent;
         width: 50%;
         height: 70vh;
-        right: 25%;
+        left: 25%;
+        top: 70px;
         bottom: 20%;
         border-radius: 5%;
-        box-shadow: 5px 5px 0px 0px #756c6c;
+        box-shadow: 5px 5px 5px 5px #756c6c;
     }
 
     #logIN{
         position: relative;
         display: flex;
         justify-content: center;
+        padding-top: 5%;
     }
 
     #userName{
@@ -65,12 +70,12 @@
         width: 20vw;
         height: 5vh;
         font-family: 'Times New Roman', Times, serif;
-        
+        border-radius: 5px;
     }
 
     #btn:hover{
         cursor: pointer;
-        background-color: cornflowerblue;
+        background-color: darkcyan;
     }
 
     #createAccount{
@@ -83,41 +88,40 @@
     }
 
     #createAccount:hover{
-        color: aliceblue;
+        color: darkcyan;
     }
 
 </style>
 <body>
     
    
-   <div id="div">
-    <img id="loginBG" src="C:/Users/nave3557/vscode/Practice/Images/loginPageBG.jpg" alt="Background Image is Not Working" width="98vw">
+<div id="div">
+    <!-- <img id="loginBG" src="C:/Users/nave3557/vscode/Practice/Images/login_page_bg.jpg" alt="Background Image is Not Working" width="98vw"> -->
     <div id="mainDiv">
-        <form action="">
+        <form action="functionalities.html">
             <h1 id="logIN">LogIN</h1>
-        <br/>
-        <br/>
-        <div id="loginSetUp"><center><input id="userName" type="text" placeholder="Enter Your Name" required/>
             <br/>
             <br/>
-            <input id="passWord" type="password" name="Password"  placeholder="Enter Password" required/>
-            <br/>
-            <br/>
-            <button id="btn" onclick="window.location.href='C:/Users/nave3557/vscode/Practice/functionalities.html'">Submit</button></center>
+            <div id="loginSetUp"><center><input id="userName" type="text" placeholder="Enter Your Name"/>
+                <br/>
+                <br/>
+                <input id="passWord" type="password" name="Password"  placeholder="Enter Password"/>
+                <br/>
+                <br/>
+               <button id="btn">Submit</button></center> 
             
-          
         </form> 
-        </div>
+    </div>
         <div>
-            <a id="createAccount" href="C:/Users/nave3557/vscode/Practice/RegistrationForm.html">Click here to Create Account</a>
+            <a id="createAccount" href="RegistrationForm.html">Click here to Create Account</a>
         </div>
     </div>
 
-   </div>
+</div>
 
     
     
     
     <table></table>
 </body>
-</html>
+</html> 

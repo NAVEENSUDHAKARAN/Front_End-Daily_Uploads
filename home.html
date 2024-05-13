@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#navbarDiv{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: rgb(32, 75, 77);
+    width: 99.7%;
+    height: 13vh;
+    border-style: ridge;
+    list-style-type: none;
+}
+#home{
+   
+    position: absolute;
+    width: 4%;
+    border-radius: 2px;
+    color: aliceblue;
+    left: 10%;
+    top: 25px;   
+    text-decoration: none;
+    
+}
+#home:hover{
+    color: cadetblue;
+    cursor: pointer;
+}
+
+#services{
+   
+    position: absolute;
+    width: 4%;
+    border-radius: 2px;
+    color: aliceblue;
+    left: 20%;
+    top: 25px;   
+    text-decoration: none;
+    
+}
+
+
+
+#services:hover{
+    cursor: pointer;
+    color: cadetblue;
+    z-index: 5;
+}
+
+#menu {
+    background-color: white;
+    width: 10vw;
+    color: black;
+    position: relative;
+    top: 35px;
+    right: 25px;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 5px; 
+    text-decoration: none;
+    list-style-type: none;
+} 
+#navbarDiv li:nth-child(2):hover #menu{
+    display: block;
+}
+#menu li:hover{
+    color: darkcyan;
+}
+#navbarDiv #menu{
+    display: none;
+}
+
+#entry{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 74%;
+    width: 25%;
+}
+
+#login{
+    width: 50%;
+    height: 100%;
+    
+}
+
+#loginBtn{
+    position: relative;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 15%;
+    border-radius: 15px;
+    border-style: none;
+
+}
+#loginBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#signUP{
+    width: 50%;
+    height: 100%;
+    /* background-color: brown; */
+}
+
+#signupBtn{
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 15%;
+    border-radius: 15px;
+    border-style: none;
+}
+#signupBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    height:85vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+#card1{
+    background-color: white;
+    position: relative;
+    width: 80%;
+    height: 50%;
+    left: 5%;
+    top: 10%;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 8px;
+    transform: translateY(0%);
+}
+
+#card1 h1{
+    position:absolute;
+}
+
+#card1:hover{
+    cursor: pointer;
+    transform: translateY(-15%);
+    transition-duration: 1s;
+    
+}
+
+#whatwedo{
+    position: relative;
+    left: 25%;
+    top: -3.5%;
+}
+
+#featureswehave{
+    position: relative;
+    left: 13%;
+    top: 2%;
+}
+
+#help{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    color: white;
+}
+
+#contact{
+    position: relative;
+    left: 18%;
+    color: white;
+}
+
+</style>
+<body>
+    <div id="mainDiv">
+        <div >
+            <ol id="navbarDiv">
+                <a href="home.html"><li id="home" style="font-weight: 600; font-size: x-large;" >Home</li></a>
+                <li id="services" style="font-weight: 600; font-size: x-large;">Services
+                    <ul id="menu"><br>
+                        <a href="viewstock.html" style="text-decoration: none; color: black; font-weight: 300; font-size: large;"><li>View Stock</li><br></a>
+                        <a href="" style="text-decoration: none; color: black; font-weight: 300; font-size: large;"><li>Add Stock</li><br></a>
+                        <a href="" style="text-decoration: none; color: black; font-weight: 300; font-size: large;"><li>Remove Stock</li><br></a>
+                    </ul>
+                </li>
+                <a href=""><li>contact</li></a>
+                <a href=""><li>help</li></a>
+
+                <div id="entry">
+                    <div id="login">
+                     <a  href="loginpage.html"><button id="loginBtn">LogIN</button></a>
+                    </div>
+                    <div id="signUP">
+                        <a href="RegistrationForm.html"><button id="signupBtn" >SignUP</button></a>
+                    </div>
+                </div>
+            </ol>
+        </div>
+        <div id="bg">
+            <!-- <img src="Images/homepagebg.png" alt="Image is Not Working" height="100%" width="100%"> -->
+            <div id="card1">
+                    <h1 id="whatwedo"  style="font-size: x-large; color: white;" >What We Do</h1>
+                    <img src="Images/whatwedobg.png" style="border-radius: 8px" alt="Image is Not Working" width="100%" height="100%">
+                
+            </div>
+            <div id="card1">
+                <h1 id="featureswehave" style="font-size: x-large; color: white;" >Features We Have!</h1>
+                <img src="Images/featureswehave.png" style="border-radius: 8px" alt="Image is Not Working" width="100%" height="100%">
+                
+            </div>
+            <div id="card1">
+                <h1 id="help" style="font-size: xxx-large;" >Help?</h1>
+                <img src="Images/helpbg.png" style="border-radius: 8px" alt="Image is Not Working" width="100%" height="100%">
+               
+            </div>
+            <div id="card1">
+                <h1 id="contact" style="font-size: xxx-large;" >Contact</h1>
+                <img src="Images/contactbg.png" style="border-radius: 8px" alt="Image is Not Working" width="100%" height="100%">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
