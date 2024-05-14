@@ -12,7 +12,7 @@
    }
    #navbarDiv{
         position: relative;
-        background-color: rgb(32, 75, 77);
+        background-color: rgb(70, 96, 190);
         width: 100vw;
         height: 10vh;
     }
@@ -20,13 +20,34 @@
     #back{
         position: absolute;
         color: aliceblue;
-        left: 10%;
-        top: 20px;
+        left: 20%;
+        top: 10px;
+        
         text-decoration: none;
+        align-items: center;
+        font-size: large;
         
     }
     #back:hover{
-        color: cadetblue;
+        color: black;
+        background-color: rgb(109, 135, 230);
+        border-radius: 5px;
+    }
+
+    #home{
+        
+        position: absolute;
+        font-size: large;
+        color: aliceblue;
+        left: 10%;
+        top: 10px;
+        text-decoration: none;
+    }
+
+    #home:hover{
+        background-color: rgb(109, 135, 230);
+        border-radius: 5px;
+        color: black;
     }
 
    #tableDiv{
@@ -37,6 +58,7 @@
         left: 2%;
         top: 15%;
         box-shadow: 5px 5px 5px 5px grey; 
+        border-radius: 8px;
     }
    
    #viewStockTable
@@ -47,6 +69,7 @@
         width: 70%;
         height: 80%;
         justify-self: center;
+        border-radius: 8px;
     }
 
     #viewStockTable :hover{
@@ -55,12 +78,12 @@
     }
    
    #cartDiv{
-    background-color: rgb(41, 79, 81);
+    background-color: #5D76A9;
     position: relative;
     width: 20vw;
     height: 60vh;
     left: 76%;
-    top: 15px;
+    top: 40px;
     box-shadow: 5px 5px 0px 0px grey;
     border-radius: 5px;
    }
@@ -72,10 +95,13 @@
 
    #submitBtn{
     position: relative;
-   size: 10%;
-   background-color: darkcyan;
-   left: 30%;
-   border-radius: 5px;
+    size: 10%;
+    top: 30%;
+    background-color: #4C516D;
+    left: 30%;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
 
    }
 
@@ -83,64 +109,54 @@
     cursor: pointer;
    }
 
-   #totalAmount{
-    color: white;
-   }
-
-   #arr{
-    color: white;
-   }
-
-   #cart{
-    color: white;
-   }
-
+  
 </style>
 <body>
     <div id="mainDiv">
         <div id="navbarDiv">
             <nav>
-                <a id="back" href="functionalities.html">Back</a>
+                <a id="home" style="padding: 10px;" href="home.html">Home</a>
+                <a id="back" style="padding: 10px;" href="functionalities.html">Back</a>
             </nav>
         </div>
         <div id="tableDiv" >
             <table id="viewStockTable" border="1">
-                <tr align="center"  style="background-color: rgb(32, 75, 77);">
+                <tr align="center"  style="background-color: #2774AE;">
                     <td >ID</td>
                     <td>ProductName</td>
                     <td >NumberOfStock</td>
                     <td>Stocked_date</td>
                     <td id="price">Price</td>
                 </tr>
-                <tr align="center"  style="background-color: rgb(100, 155, 158)">
+                <tr align="center" style="background-color: #F0F8FF">
                     <td>101</td>
                     <td>Apple</td>
                     <td>20</td>
                     <td>01/01/2024</td>
                     <td >120</td>
                 </tr>
-                <tr align="center" style="background-color: rgb(39, 109, 109)">
+                <tr align="center" style="background-color: #4B9CD3">
                     <td>102</td>
                     <td>Mango</td>
                     <td>15</td>
                     <td>01/01/2024</td>
                     <td >60</td>
                 </tr>
-                <tr align="center" style="background-color: rgb(100, 155, 158)">
+                <tr align="center" style="background-color: #F0F8FF">
                     <td>103</td>
                     <td>Orange</td>
                     <td>25</td>
                     <td>01/01/2024</td>
                     <td>80</td>
                 </tr>
-                <tr align="center" style="background-color: rgb(39, 109, 109)"  >
+                <tr align="center" style="background-color: #4B9CD3"  >
                     <td>104</td>
                     <td>Grapes</td>
                     <td>30</td>
                     <td>01/01/2024</td>
                     <td>50</td>
                 </tr>
-                <tr align="center" style="background-color: rgb(100, 155, 158)"> 
+                <tr align="center" style="background-color: #F0F8FF"> 
                     <td>105</td>
                     <td>Banana</td>
                     <td>20</td>
@@ -153,11 +169,12 @@
         <div id="cartDiv">
             <br>
               <div id="selectedDetails">
-                <p style="color: white;" >Selected Product is : <p id="cart"> </p>
+                <p >Selected Product is : <p id="cart"> </p>
                 <p id="arr"></p>
                 <p id="totalAmount"></p>
-                <button id="submitBtn" onclick="window.location.href='cart.html' ">Add To Cart</button>
               </div>
+              <button id="submitBtn" onclick="window.location.href='cart.html' ">Add To Cart</button>
+
         </div>
     </div>
 </body>
